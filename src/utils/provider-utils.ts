@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Utility functions for provider-specific logic and capabilities.
  */
 
@@ -16,6 +16,7 @@ export function isReasoningTagProvider(provider: string | undefined | null): boo
   // Check for exact matches or known prefixes/substrings for reasoning providers
   if (
     normalized === "ollama" ||
+    normalized === "litellm" ||
     normalized === "google-gemini-cli" ||
     normalized === "google-generative-ai"
   ) {
